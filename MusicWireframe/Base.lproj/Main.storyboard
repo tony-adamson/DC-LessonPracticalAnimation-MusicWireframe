@@ -1,24 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MusicWireframe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_processing20200511-25230-qs3emj" translatesAutoresizingMaskIntoConstraints="NO" id="KgA-9E-b3a">
+                                <rect key="frame" x="20" y="79" width="353" height="353"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KgA-9E-b3a" secondAttribute="height" multiplier="1:1" id="2jk-Qz-GIs"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJs-i8-vXj">
+                                <rect key="frame" x="59.666666666666657" y="486.66666666666669" width="33" height="33.000000000000057"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nJs-i8-vXj" secondAttribute="height" multiplier="1:1" id="y8q-fl-eU8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlP-JT-ASh">
+                                <rect key="frame" x="180" y="486.66666666666669" width="33" height="33.000000000000057"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GlP-JT-ASh" secondAttribute="height" multiplier="1:1" id="wOR-Ut-CQe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kq0-cz-GSs">
+                                <rect key="frame" x="300.66666666666669" y="486.66666666666669" width="33" height="33.000000000000057"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Kq0-cz-GSs" secondAttribute="height" multiplier="1:1" id="QTu-pC-6nu"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Cqg-1O-IPj">
+                                <rect key="frame" x="60" y="492" width="273" height="22"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajW-R7-aZm">
+                                        <rect key="frame" x="0.0" y="0.0" width="32" height="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="backward.fill" catalog="system" symbolScale="large"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkf-BM-tgT">
+                                        <rect key="frame" x="127.66666666666666" y="0.0" width="18" height="22"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="play.fill" catalog="system" symbolScale="large"/>
+                                        </state>
+                                        <state key="selected">
+                                            <imageReference key="image" image="pause.fill" catalog="system" symbolScale="large"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyU-ku-EtF">
+                                        <rect key="frame" x="241" y="0.0" width="32" height="22"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="forward.fill" catalog="system" symbolScale="large"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cqg-1O-IPj" secondAttribute="trailing" constant="60" id="98I-Tt-bn1"/>
+                            <constraint firstItem="nJs-i8-vXj" firstAttribute="height" secondItem="ajW-R7-aZm" secondAttribute="height" multiplier="1.5" id="C4w-gl-oE0"/>
+                            <constraint firstItem="qkf-BM-tgT" firstAttribute="centerX" secondItem="GlP-JT-ASh" secondAttribute="centerX" id="Jcd-EQ-cVE"/>
+                            <constraint firstItem="TyU-ku-EtF" firstAttribute="centerY" secondItem="Kq0-cz-GSs" secondAttribute="centerY" id="Mgm-nw-kdR"/>
+                            <constraint firstItem="KgA-9E-b3a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ou3-ny-tlB"/>
+                            <constraint firstItem="ajW-R7-aZm" firstAttribute="centerX" secondItem="nJs-i8-vXj" secondAttribute="centerX" id="RFj-aK-YBl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KgA-9E-b3a" secondAttribute="trailing" constant="20" id="bhg-pG-AIg"/>
+                            <constraint firstItem="qkf-BM-tgT" firstAttribute="centerY" secondItem="GlP-JT-ASh" secondAttribute="centerY" id="e4J-uk-G5X"/>
+                            <constraint firstItem="Cqg-1O-IPj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="eBL-h5-Gdh"/>
+                            <constraint firstItem="Cqg-1O-IPj" firstAttribute="top" secondItem="KgA-9E-b3a" secondAttribute="bottom" constant="60" id="fRO-J7-b7f"/>
+                            <constraint firstItem="ajW-R7-aZm" firstAttribute="centerY" secondItem="nJs-i8-vXj" secondAttribute="centerY" id="fjn-DC-7xy"/>
+                            <constraint firstItem="TyU-ku-EtF" firstAttribute="centerX" secondItem="Kq0-cz-GSs" secondAttribute="centerX" id="ko3-FD-PoA"/>
+                            <constraint firstItem="GlP-JT-ASh" firstAttribute="height" secondItem="qkf-BM-tgT" secondAttribute="height" multiplier="1.5" id="qE0-Nr-obX"/>
+                            <constraint firstItem="Kq0-cz-GSs" firstAttribute="height" secondItem="TyU-ku-EtF" secondAttribute="height" multiplier="1.5" id="w2n-ys-dZt"/>
+                            <constraint firstItem="KgA-9E-b3a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="w9O-aR-Gxe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="KgA-9E-b3a" id="fLd-ft-Hi4"/>
+                        <outlet property="forwardBackground" destination="Kq0-cz-GSs" id="P5F-ET-kTn"/>
+                        <outlet property="forwardButton" destination="TyU-ku-EtF" id="jj0-pI-9XB"/>
+                        <outlet property="playPauseBackground" destination="GlP-JT-ASh" id="N45-Ig-8xw"/>
+                        <outlet property="playPauseButton" destination="qkf-BM-tgT" id="cMP-xe-VMt"/>
+                        <outlet property="reverseBackground" destination="nJs-i8-vXj" id="ufy-6J-2wX"/>
+                        <outlet property="reverseButton" destination="ajW-R7-aZm" id="1Lc-LS-rJk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backward.fill" catalog="system" width="128" height="77"/>
+        <image name="forward.fill" catalog="system" width="128" height="77"/>
+        <image name="image_processing20200511-25230-qs3emj" width="800" height="800"/>
+        <image name="pause.fill" catalog="system" width="117" height="128"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
