@@ -64,14 +64,34 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func touchedUpInside(_ sender: Any) {
+    // Действие по прекращению прикосновения
+    @IBAction func touchedUpInside(_ sender: UIButton) {
+        let buttonBackground: UIView
+
+        switch sender {
+        case reverseButton:
+            buttonBackground = reverseBackground
+        case playPauseButton:
+            buttonBackground = playPauseBackground
+        case forwardButton:
+            buttonBackground = forwardBackground
+        default:
+            return
+        }
+
+        UIView.animate(withDuration: 0.25, animations: {
+            buttonBackground.alpha = 0.0
+            buttonBackground.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            sender.transform = CGAffineTransform.identity
+        }) { (_) in
+            buttonBackground.transform = CGAffineTransform.identity
+        }
     }
     
     // Действия после касания пальцем кнопки
     @IBAction func touchedDown(_ sender: UIButton) {
         let buttonBackground: UIView
-        
-        // Включения фона кнопки
+
         switch sender {
         case reverseButton:
             buttonBackground = reverseBackground
@@ -83,14 +103,10 @@ class ViewController: UIViewController {
             return
         }
         
-        // Анимация фона
-        UIView.animate(withDuration: 0.5, animations: {
-                buttonBackground.alpha = 0.0
-                buttonBackground.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
-                sender.transform = CGAffineTransform.identity
-            }) { (_) in
-                buttonBackground.transform = CGAffineTransform.identity
-            }
+        UIView.animate(withDuration: 0.25) {
+            buttonBackground.alpha = 0.3
+            sender.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
+        }
     }
     
 }
