@@ -53,6 +53,10 @@
                                         <state key="normal">
                                             <imageReference key="image" image="backward.fill" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="L05-aa-dpM"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adx-im-7ip"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qkf-BM-tgT">
                                         <rect key="frame" x="127.66666666666666" y="0.0" width="18" height="22"/>
@@ -66,6 +70,8 @@
                                         </state>
                                         <connections>
                                             <action selector="playPauseButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="dRe-UR-OOb"/>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="3wq-lT-Td2"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yuZ-6C-A1g"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TyU-ku-EtF">
@@ -74,6 +80,10 @@
                                         <state key="normal">
                                             <imageReference key="image" image="forward.fill" catalog="system" symbolScale="large"/>
                                         </state>
+                                        <connections>
+                                            <action selector="touchedDown:" destination="BYZ-38-t0r" eventType="touchDown" id="BlM-TZ-xzg"/>
+                                            <action selector="touchedUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRE-ql-gnd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
